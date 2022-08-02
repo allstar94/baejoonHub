@@ -2,6 +2,46 @@ bufferedreader scanner 차이
 
 ![image](https://user-images.githubusercontent.com/42260010/182291315-aaeb2ebf-8778-4de6-882c-4e6ecaeb672f.png)
 
+package milk;
+
+import java.util.Scanner;
+
+public class study {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("원하는 숫자를 입력하세요");
+		String input = scanner.nextLine();
+		int num = Integer.parseInt(input);
+
+		System.out.println(num);
+	}
+
+}
+
+
+우리는 보통 자바를 처음 배울때 콘솔에서 입력을 받기 위해 이러한 방식을 많이 사용했을 것이다. 하지만 Scanner는 편리하지만 속도가 느리다는 단점이 있어 특히 알고리즘 문제를 풀때 시간초과 에러를 내는 치명적인 단점이 있습니다. 하하지만  BufferedReader 를 아래와 같이 사용한다면 버퍼를 사용하기 때문에 입력 속도에서 확연히 줄일 수 있습니다.
+
+package milk;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class study {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // 선언
+		String s = br.readLine(); 
+		int i = Integer.parseInt(br.readLine()); 
+		
+		System.out.println("String : " + s);
+		System.out.println("Int : " + i);
+		
+	}
+}
+
+![image](https://user-images.githubusercontent.com/42260010/182293826-e750cd85-a60d-4fde-a686-01de85a3a028.png)
 
 
 # [Silver I] 구간 합 구하기 5 - 11660 
