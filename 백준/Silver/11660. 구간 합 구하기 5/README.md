@@ -1,5 +1,8 @@
 bufferedreader scanner 차이
 
+![image](https://user-images.githubusercontent.com/42260010/182291315-aaeb2ebf-8778-4de6-882c-4e6ecaeb672f.png)
+
+
 
 # [Silver I] 구간 합 구하기 5 - 11660 
 
